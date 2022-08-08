@@ -1,32 +1,28 @@
 <template>
-  <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
-  </div>
+	<v-app>
+		<TheNavbar @is-dark="themeToggle" />
+		<RouterView />
+		<TheFooter />
+	</v-app>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import TheNavbar from '@/components/Navegation/TheNavbar.vue';
+import TheFooter from '@/components/Navegation/TheFooter.vue';
+import LoginView from '@/views/LoginView.vue';
+import AboutView from '@/views/AboutView.vue';
+import RouterLink from '@/router';
+import isDark from '@/components/Navegation/TheNavbar.vue';
 
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+export default {
+	name: 'App',
+	components: {
+		TheNavbar,
+		TheFooter,
+		LoginView,
+		AboutView,
+		RouterLink,
+		isDark,
+	},
+};
+</script>

@@ -1,0 +1,26 @@
+[
+	{
+		"color": "red lighten-2",
+		"icon": "mdi-star",
+		"title": "Parabéns Letícia!",
+		"text": "Nossos cumprimentos a Letícia Azevedo pela sua promoção. Estamos orgulhosos!"
+	},
+	{
+		"color": "green darken-3",
+		"icon": "mdi-calendar-month",
+		"title": "7 de setembro",
+		"text": "Lojas com funcionamento normal no feriado."
+	},
+	{
+		"color": "purple darken-4",
+		"icon": "mdi-cake-variant",
+		"title": "Melanie Brito 🥳",
+		"text": "A empresa deseja um feliz aniversário!"
+	},
+	{
+		"color": "indigo",
+		"icon": "mdi-cart",
+		"title": "Ana Paula",
+		"text": "Ana Paula realizou um número impressionante de vendas."
+	}
+]
